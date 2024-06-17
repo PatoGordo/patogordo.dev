@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+* {
+  font-family: "Inter", sans-serif;
+
+  *:not(svg, path, g, rect) {
+    @apply font-medium;
+
+    color: var(--text-color);
+  }
+}
+
+h1,
+h2 {
+  color: #ffffff;
+  @apply text-2xl font-bold;
+}
+
+h3 {
+  color: #e4e5eb;
+  @apply text-xl font-semibold;
+}
+
+.logo-font,
+.logo-font > * {
+  font-family: "Russo One", sans-serif;
+}
+
+#__nuxt,
+html,
+body {
+  @apply w-full h-full bg-base;
+}

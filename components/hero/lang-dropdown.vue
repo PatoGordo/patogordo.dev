@@ -1,0 +1,95 @@
+<script lang="ts" setup>
+import { vOnClickOutside } from "@vueuse/components";
+
+const langDropdownOpen = ref(false);
+const lang = ref("pt");
+
+const handleOpenLangDropdown = () => {
+  langDropdownOpen.value = true;
+};
+
+const handleCloseLangDropdown = () => {
+  langDropdownOpen.value = false;
+};
+
+const handleChangeLang = (newLang: string) => {
+  lang.value = newLang;
+  handleCloseLangDropdown();
+};
+</script>
+
+<template>
+  <div>
+    <button
+      @click="handleOpenLangDropdown"
+      class="relative flex items-center justify-between h-full bg-white px-4 py-1 gap-2 rounded-full"
+    >
+      <template v-if="lang === 'pt'">
+        <div class="flex gap-2">
+          <icon name="circle-flags:br" size="24" />
+          <span class="text-black font-bold max-md:hidden max-sm:block"> Português </span>
+        </div>
+        <icon
+          name="tabler:chevron-down"
+          class="!text-black fill-black"
+          size="24"
+        />
+      </template>
+      <template v-else>
+        <div class="flex gap-2">
+          <icon name="circle-flags:us" size="24" />
+          <span class="text-black font-bold max-md:hidden max-sm:block">English</span>
+        </div>
+        <icon
+          name="tabler:chevron-down"
+          class="!text-black fill-black"
+          size="24"
+        />
+      </template>
+    </button>
+
+    <div
+      class="absolute right-72 max-sm:right-auto max-xl:right-32 max-lg:right-24 max-md:right-12 bg-white mt-2 py-3 rounded-lg"
+      :class="langDropdownOpen ? 'visible' : 'invisible'"
+      v-on-click-outside="handleCloseLangDropdown"
+    >
+      <ul
+        class="w-full flex flex-col items-center justify-center gap-2 cursor-pointer"
+      >
+        <li
+          @click="handleChangeLang('pt')"
+          class="w-full flex flex-row items-center justify-between px-4 py-1 gap-2"
+        >
+          <div class="flex gap-2">
+            <icon name="circle-flags:br" size="24" />
+            <span class="text-black font-bold"> Português </span>
+          </div>
+          <icon
+            v-if="lang === 'pt'"
+            name="tabler:circle-check"
+            class="text-black"
+            size="24"
+          />
+          <icon v-else name="tabler:circle" class="text-black" size="24" />
+        </li>
+
+        <li
+          @click="handleChangeLang('en')"
+          class="w-full flex flex-row items-center justify-between px-4 py-1 gap-2"
+        >
+          <div class="flex gap-2">
+            <icon name="circle-flags:us" size="24" />
+            <span class="text-black font-bold">English</span>
+          </div>
+          <icon
+            v-if="lang === 'en'"
+            name="tabler:circle-check"
+            class="text-black"
+            size="24"
+          />
+          <icon v-else name="tabler:circle" class="text-black" size="24" />
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>
