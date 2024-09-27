@@ -1,24 +1,8 @@
 <template>
-  <Html>
-    <Head>
+  <Html lang="en">
+    <Head lang="en">
       <!-- SEO & Meta tags -->
-      <Title>PatoGordo</Title>
-
-      <!-- Fonts -->
-      <Link rel="preconnect" href="https://fonts.googleapis.com" />
-      <Link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin="anonymous"
-      />
-      <Link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-        rel="stylesheet"
-      />
-      <Link
-        href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-        rel="stylesheet"
-      />
+      <Title>Ícaro Rocha (Pato)</Title>
     </Head>
 
     <Body>

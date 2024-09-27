@@ -1,0 +1,33 @@
+{
+  "about": {
+    "who-am-i": {
+      "description": {
+        "a-k-a": "conhecido como",
+        "my-name-is": "Meu nome é",
+        "text": "sou um Engenheiro de Software e atualmente trabalho no mercado financeiro brasileiro, desenvolvendo e mantendo aplicativos para máquinas de cartão de crédito, bancos digitais, portais de venda e outros softwares demandados pelo setor."
+      },
+      "title": "Quem sou?"
+    },
+    "knowledge-and-experience": {
+      "description": {
+        "education-and-experience-details": "e atualmente trabalho em uma empresa local como Engenheiro de Software, no meu dia a dia utilizo JavaScript, linguagem essa que domino, também utilizo frameworks como Vue, Nuxt, React, Next, e bancos de dados como PostgresSQL, MySQL e MongoDB.",
+        "education-and-experience-intro": "Eu estou me graduando em Engenharia de Software na"
+      },
+      "title": "Conhecimento e Experiencia"
+    }
+  },
+  "header": {
+    "about": "Sobre mim",
+    "contact-me": "Contate me",
+    "projects": "Projetos"
+  },
+  "profile": {
+    "contact-me": "Contate me",
+    "datails": "um Engheneiro de Software e Entusiasta de Tecnologia movido por novos conhecimentos e experiencias. ",
+    "hello-i-am": {
+      "title": "Olá, sou"
+    },
+    "photo-alt": "Minha foto, em frente a uma parede branca vestido com uma camiseta preta"
+  },
+  "work-in-progress": "Em desenvolvimento"
+}

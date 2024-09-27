@@ -2,14 +2,14 @@
 
 <template>
   <section class="w-full flex flex-col items-center">
-    <hero-header />
+    <HeroHeader />
 
     <span class="mt-12" />
 
-    <hero-profile />
+    <HeroProfile />
 
     <span class="mt-12" />
 
-    <hero-about />
+    <HeroAbout />
   </section>
 </template>

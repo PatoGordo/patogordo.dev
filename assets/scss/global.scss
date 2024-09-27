@@ -2,6 +2,8 @@
 
 * {
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  scroll-margin-top: 2rem;
 
   *:not(svg, path, g, rect) {
     @apply font-medium;

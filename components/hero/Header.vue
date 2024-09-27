@@ -12,7 +12,6 @@ const isActive = (hash: string) => {
   return false;
 };
 
-
 const closeDrawer = () => {
   drawerOpen.value = !drawerOpen.value;
 };
@@ -35,6 +34,7 @@ const toggleDrawerOpen = () => {
 
     <div class="max-md:flex hidden items-center justify-center gap-4">
       <button @click="toggleDrawerOpen">
+        <span class="sr-only">Menu</span>
         <icon name="tabler:menu-2" size="28" />
       </button>
     </div>
@@ -42,7 +42,7 @@ const toggleDrawerOpen = () => {
     <ul
       :class="
         drawerOpen
-          ? 'max-md:flex max-md:fixed max-md:top-0 max-md:left-0 max-md:flex-col max-md:justify-center max-md:w-full max-md:h-full max-md:bg-base-200'
+          ? 'max-md:flex max-md:fixed max-md:top-0 max-md:left-0 max-md:flex-col max-md:justify-center max-md:w-full max-md:h-full max-md:bg-base-200 z-50'
           : 'max-md:hidden'
       "
       class="flex flex-row items-center justify-end gap-8"
@@ -51,7 +51,11 @@ const toggleDrawerOpen = () => {
         :class="drawerOpen ? 'max-md:flex ' : 'max-md:hidden'"
         class="hidden fixed top-4 right-4"
       >
-        <button @click="toggleDrawerOpen" class="bg-base-300 p-4 rounded-full">
+        <button
+          @click="toggleDrawerOpen"
+          class="bg-base-300 p-4 h-[60px] w-[60px] rounded-full"
+        >
+          <span class="sr-only">Fechar</span>
           <icon name="tabler:x" size="28" />
         </button>
       </li>
@@ -62,7 +66,7 @@ const toggleDrawerOpen = () => {
           :class="isActive('') || isActive('about') ? '!text-primary-500' : ''"
           class="font-semibold"
         >
-          About
+          {{ $t("header.about") }}
         </nuxt-link>
       </li>
       <li>
@@ -72,7 +76,7 @@ const toggleDrawerOpen = () => {
           :class="isActive('projects') ? '!text-primary-500' : ''"
           class="font-semibold"
         >
-          Projects
+          {{ $t("header.projects") }}
         </nuxt-link>
       </li>
       <li>
@@ -82,7 +86,7 @@ const toggleDrawerOpen = () => {
           :class="isActive('contact-me') ? '!text-primary-500' : ''"
           class="font-semibold"
         >
-          Contact me
+          {{ $t("header.contact-me") }}
         </nuxt-link>
       </li>
       <li>

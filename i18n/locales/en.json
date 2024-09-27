@@ -1,0 +1,33 @@
+{
+  "about": {
+    "who-am-i": {
+      "description": {
+        "a-k-a": "a.k.a",
+        "my-name-is": "My name is",
+        "text": "I'm a professional Software Engineer currently working in the brazilian financial market, developing and maintaining credit card terminal apps, digital banking, sales portal, and other demanded softwares of the sector."
+      },
+      "title": "Who am I?"
+    },
+    "knowledge-and-experience": {
+      "title": "Knowledge and Experience",
+      "description": {
+        "education-and-experience-intro": "I'm graduating in Software Engineering at",
+        "education-and-experience-details": "and currently working in a local growing company as a Software Engineer, in my daily working I usually use the JavaScript programming language, that I have a bigger experience, I also use frameworks like Vue, Nuxt, React, Next and databases like PostgresSQL, MySQL and MongoDB."
+      }
+    }
+  },
+  "header": {
+    "about": "About",
+    "contact-me": "Contact me",
+    "projects": "Projects"
+  },
+  "profile": {
+    "hello-i-am": {
+      "title": "Hello, I'm"
+    },
+    "datails": "a Software Engineer and Technology Enthusiast driven by a passion for new knowledge and experiences.",
+    "contact-me": "Contact me",
+    "photo-alt": "My photo, in front of a white wall dressing a black t-shirt"
+  },
+  "work-in-progress": "Work in Progress"
+}

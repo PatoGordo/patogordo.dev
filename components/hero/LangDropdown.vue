@@ -2,7 +2,8 @@
 import { vOnClickOutside } from "@vueuse/components";
 
 const langDropdownOpen = ref(false);
-const lang = ref("pt");
+
+const { locale, setLocale } = useI18n();
 
 const handleOpenLangDropdown = () => {
   langDropdownOpen.value = true;
@@ -13,7 +14,7 @@ const handleCloseLangDropdown = () => {
 };
 
 const handleChangeLang = (newLang: string) => {
-  lang.value = newLang;
+  setLocale(newLang);
   handleCloseLangDropdown();
 };
 </script>
@@ -24,10 +25,12 @@ const handleChangeLang = (newLang: string) => {
       @click="handleOpenLangDropdown"
       class="relative flex items-center justify-between h-full bg-white px-4 py-1 gap-2 rounded-full"
     >
-      <template v-if="lang === 'pt'">
+      <template v-if="locale === 'pt'">
         <div class="flex gap-2">
           <icon name="circle-flags:br" size="24" />
-          <span class="text-black font-bold max-md:hidden max-sm:block"> Português </span>
+          <span class="text-black font-bold max-md:hidden max-sm:block">
+            Português
+          </span>
         </div>
         <icon
           name="tabler:chevron-down"
@@ -38,7 +41,9 @@ const handleChangeLang = (newLang: string) => {
       <template v-else>
         <div class="flex gap-2">
           <icon name="circle-flags:us" size="24" />
-          <span class="text-black font-bold max-md:hidden max-sm:block">English</span>
+          <span class="text-black font-bold max-md:hidden max-sm:block"
+            >English</span
+          >
         </div>
         <icon
           name="tabler:chevron-down"
@@ -65,7 +70,7 @@ const handleChangeLang = (newLang: string) => {
             <span class="text-black font-bold"> Português </span>
           </div>
           <icon
-            v-if="lang === 'pt'"
+            v-if="locale === 'pt'"
             name="tabler:circle-check"
             class="text-black"
             size="24"
@@ -82,7 +87,7 @@ const handleChangeLang = (newLang: string) => {
             <span class="text-black font-bold">English</span>
           </div>
           <icon
-            v-if="lang === 'en'"
+            v-if="locale === 'en'"
             name="tabler:circle-check"
             class="text-black"
             size="24"
