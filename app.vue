@@ -1,14 +1,22 @@
+<script setup lang="ts">
+const head = useLocaleHead({
+  addDirAttribute: true,
+  identifierAttribute: "id",
+  addSeoAttributes: true,
+});
+</script>
+
 <template>
-  <Html lang="en">
-    <Head lang="en">
+  <Html :lang="head.htmlAttrs.lang">
+    <Head>
       <!-- SEO & Meta tags -->
       <Title>Ícaro Rocha (Pato)</Title>
     </Head>
 
     <Body>
-      <nuxt-layout>
-        <nuxt-page />
-      </nuxt-layout>
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
     </Body>
   </Html>
 </template>

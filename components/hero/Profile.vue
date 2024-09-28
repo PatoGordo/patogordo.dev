@@ -12,12 +12,17 @@
     />
 
     <div class="flex flex-col items-start justify-center gap-4">
-      <h2 class="text-xl max-sm:text-center text-start font-semibold text-white">
+      <h2
+        class="text-xl max-sm:text-center text-start font-semibold text-white"
+      >
         {{ $t("profile.hello-i-am.title") }}
-        <span class="text-xl text-secondary font-semibold">Ícaro Rocha</span>, {{ $t("profile.datails") }}
+        <span class="text-xl text-secondary font-semibold">Ícaro Rocha</span>,
+        {{ $t("profile.datails") }}
       </h2>
 
-      <div class="flex item-center flex-wrap max-sm:justify-center w-full justify-start gap-8">
+      <div
+        class="flex item-center flex-wrap max-sm:justify-center w-full justify-start gap-8"
+      >
         <a
           class="flex items-center justify-center gap-2"
           href="https://github.com/patogordo"
@@ -45,9 +50,9 @@
           href="/#contact-me"
         >
           <icon name="uil:envelope-alt" size="24" />
-          <span class="font-semibold underline underline-offset-2"
-            >{{ $t("profile.contact-me") }}</span
-          >
+          <span class="font-semibold underline underline-offset-2">{{
+            $t("profile.contact-me")
+          }}</span>
         </nuxt-link>
       </div>
     </div>
