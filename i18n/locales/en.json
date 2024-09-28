@@ -4,30 +4,48 @@
       "description": {
         "a-k-a": "a.k.a",
         "my-name-is": "My name is",
-        "text": "I'm a professional Software Engineer currently working in the brazilian financial market, developing and maintaining credit card terminal apps, digital banking, sales portal, and other demanded softwares of the sector."
+        "text": "I'm a Software Engineer currently working in the Brazilian financial market, developing and maintaining credit card terminal apps, digital banking, sales portals, and other demanded software for the sector."
       },
       "title": "Who am I?"
     },
     "knowledge-and-experience": {
-      "title": "Knowledge and Experience",
       "description": {
         "education-and-experience-intro": "I'm graduating in Software Engineering at",
-        "education-and-experience-details": "and currently working in a local growing company as a Software Engineer, in my daily working I usually use the JavaScript programming language, that I have a bigger experience, I also use frameworks like Vue, Nuxt, React, Next and databases like PostgresSQL, MySQL and MongoDB."
-      }
+        "education-and-experience-details": "and currently working in a local growing company as a Software Engineer. In my daily work, I primarily use JavaScript, which I have extensive experience with; I also utilize frameworks like Vue, Nuxt, React, Next, and databases like PostgreSQL, MySQL, and MongoDB."
+      },
+      "title": "Knowledge and Experience"
     }
   },
   "header": {
-    "about": "About",
-    "contact-me": "Contact me",
+    "about": "About Me",
+    "contact-me": "Contact Me",
     "projects": "Projects"
   },
   "profile": {
     "hello-i-am": {
       "title": "Hello, I'm"
     },
-    "datails": "a Software Engineer and Technology Enthusiast driven by a passion for new knowledge and experiences.",
-    "contact-me": "Contact me",
-    "photo-alt": "My photo, in front of a white wall dressing a black t-shirt"
+    "details": "a Software Engineer and Technology Enthusiast driven by a passion for new knowledge and experiences.",
+    "contact-me": "Contact Me",
+    "photo-alt": "My photo, in front of a white wall, wearing a black t-shirt"
   },
-  "work-in-progress": "Work in Progress"
+  "work-in-progress": "Work in Progress",
+  "projects": {
+    "title": "My Projects",
+    "description": "Here is the list of projects that I am most satisfied with. Some of them I created to learn something new, while others I developed to generate income.",
+    "icons-alt": "{project_name} icon",
+    "preview-alt": "{project_name} preview",
+    "pontodigital": {
+      "description": "PontoDigital is an innovative platform for employee time tracking. It allows real-time monitoring of in-person, remote, and hybrid teams with detailed reports and customization. Offering API integration, data security, and dedicated support for businesses of all sizes."
+    },
+    "supported-languages": "Supported Languages",
+    "try-it-out": "Try it Out",
+    "source-code": "Source Code",
+    "rocketlaunches": {
+      "description": "RocketLaunches is the app for space enthusiasts! With it, you can know the upcoming rocket launches, explore information about missions, and see the latest news on space exploration. There are also options for developers who want to integrate this data into their projects."
+    },
+    "gbreath": {
+      "description": "GBreath is an open-source project designed to assist meditation practitioners with breathing techniques. With it, users can enhance their breathing skills and promote well-being. It’s an accessible and user-friendly tool, perfect for those seeking relaxation or emotional control."
+    }
+  }
 }
