@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-09-27",
+  ssr: false,
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxt/icon",
@@ -8,7 +9,6 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/fonts",
     "@vueuse/nuxt",
-    "@sentry/nuxt/module",
   ],
   tailwindcss: {
     cssPath: ["~/assets/scss/tailwind.scss", { injectPosition: "first" }],
