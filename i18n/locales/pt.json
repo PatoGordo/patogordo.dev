@@ -4,30 +4,30 @@
       "description": {
         "a-k-a": "conhecido como",
         "my-name-is": "Meu nome é",
-        "text": "Sou um Engenheiro de Software e atualmente trabalho no mercado financeiro brasileiro, desenvolvendo e mantendo aplicativos para máquinas de cartão de crédito, bancos digitais, portais de vendas e outros softwares demandados pelo setor."
+        "text": "sou um Engenheiro de Software e atualmente trabalho no mercado financeiro brasileiro, desenvolvendo e mantendo aplicativos para máquinas de cartão de crédito, bancos digitais, portais de venda e outros softwares demandados pelo setor."
       },
       "title": "Quem sou?"
     },
     "knowledge-and-experience": {
       "description": {
-        "education-and-experience-details": "E atualmente trabalho em uma empresa local como Engenheiro de Software. No meu dia a dia, utilizo JavaScript, linguagem que domino; também utilizo frameworks como Vue, Nuxt, React, Next, e bancos de dados como PostgreSQL, MySQL e MongoDB.",
-        "education-and-experience-intro": "Estou me graduando em Engenharia de Software na"
+        "education-and-experience-details": "e atualmente trabalho em uma empresa local como Engenheiro de Software, no meu dia a dia utilizo JavaScript, linguagem essa que domino, também utilizo frameworks como Vue, Nuxt, React, Next, e bancos de dados como PostgresSQL, MySQL e MongoDB.",
+        "education-and-experience-intro": "Eu estou me graduando em Engenharia de Software na"
       },
-      "title": "Conhecimento e Experiência"
+      "title": "Conhecimento e Experiencia"
     }
   },
   "header": {
     "about": "Sobre mim",
-    "contact-me": "Contate-me",
+    "contact-me": "Contate me",
     "projects": "Projetos"
   },
   "profile": {
-    "contact-me": "Contate-me",
-    "details": "um Engenheiro de Software e Entusiasta de Tecnologia, movido por novos conhecimentos e experiências.",
+    "contact-me": "Contate me",
+    "details": "um Engheneiro de Software e Entusiasta de Tecnologia movido por novos conhecimentos e experiencias. ",
     "hello-i-am": {
       "title": "Olá, sou"
     },
-    "photo-alt": "Minha foto, em frente a uma parede branca, vestido com uma camiseta preta"
+    "photo-alt": "Minha foto, em frente a uma parede branca vestido com uma camiseta preta"
   },
   "work-in-progress": "Em desenvolvimento",
   "projects": {
@@ -41,11 +41,11 @@
     "try-it-out": "Saiba mais",
     "source-code": "Código Fonte",
     "rocketlaunches": {
-      "description": "O RocketLaunches é o aplicativo para entusiastas do espaço! Com ele, é possível saber os próximos lançamentos de foguetes, explorar informações sobre missões e ver as últimas notícias sobre exploração espacial. Também há opções para desenvolvedores que desejam integrar esses dados em seus projetos."
+      "description": "O RocketLaunches é o aplicativo para entusiastas do espaço! Com ele é possivel saber os prócimos lançamentos de foguetes, explorar informações sobre missões e ver as ultimas noticias sobre exploração espacial. Também há opções para desenvolvedores que desejam integrar esses dados em seus projetos."
     },
     "gbreath": {
       "description": "O GBreath é um projeto de código aberto para ajudar praticantes de meditação com técnicas de respiração. Com ele, os usuários podem aprimorar suas habilidades de respiração e promover o bem-estar. É uma ferramenta acessível e fácil de usar, perfeita para quem busca relaxamento ou controle emocional."
     },
-    "description": "Essa é a lista dos projetos com os quais tenho mais satisfação nos resultados. Alguns deles fiz para aprender tecnologias novas e outros busquei ganhos a partir deles."
+    "description": "Essa é a lista dos projetos com que tenho mais satisfação dos resultados, alguns deles fiz para aprender tecnologias novas e outros fiz buscando ter ganhos a partir deles."
   }
 }
