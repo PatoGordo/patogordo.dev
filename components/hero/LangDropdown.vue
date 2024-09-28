@@ -27,12 +27,12 @@ const handleChangeLang = (newLang: string) => {
     >
       <template v-if="locale === 'pt'">
         <div class="flex gap-2">
-          <icon name="circle-flags:br" size="24" />
+          <Icon name="circle-flags:br" size="24" />
           <span class="text-black font-bold max-md:hidden max-sm:block">
             Português
           </span>
         </div>
-        <icon
+        <Icon
           name="tabler:chevron-down"
           class="!text-black fill-black"
           size="24"
@@ -40,12 +40,12 @@ const handleChangeLang = (newLang: string) => {
       </template>
       <template v-else>
         <div class="flex gap-2">
-          <icon name="circle-flags:us" size="24" />
+          <Icon name="circle-flags:us" size="24" />
           <span class="text-black font-bold max-md:hidden max-sm:block"
             >English</span
           >
         </div>
-        <icon
+        <Icon
           name="tabler:chevron-down"
           class="!text-black fill-black"
           size="24"
@@ -66,16 +66,16 @@ const handleChangeLang = (newLang: string) => {
           class="w-full flex flex-row items-center justify-between px-4 py-1 gap-2"
         >
           <div class="flex gap-2">
-            <icon name="circle-flags:br" size="24" />
+            <Icon name="circle-flags:br" size="24" />
             <span class="text-black font-bold"> Português </span>
           </div>
-          <icon
+          <Icon
             v-if="locale === 'pt'"
             name="tabler:circle-check"
             class="text-black"
             size="24"
           />
-          <icon v-else name="tabler:circle" class="text-black" size="24" />
+          <Icon v-else name="tabler:circle" class="text-black" size="24" />
         </li>
 
         <li
@@ -83,16 +83,16 @@ const handleChangeLang = (newLang: string) => {
           class="w-full flex flex-row items-center justify-between px-4 py-1 gap-2"
         >
           <div class="flex gap-2">
-            <icon name="circle-flags:us" size="24" />
+            <Icon name="circle-flags:us" size="24" />
             <span class="text-black font-bold">English</span>
           </div>
-          <icon
+          <Icon
             v-if="locale === 'en'"
             name="tabler:circle-check"
             class="text-black"
             size="24"
           />
-          <icon v-else name="tabler:circle" class="text-black" size="24" />
+          <Icon v-else name="tabler:circle" class="text-black" size="24" />
         </li>
       </ul>
     </div>

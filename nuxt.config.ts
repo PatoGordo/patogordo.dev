@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/fonts",
     "@vueuse/nuxt",
+    "@sentry/nuxt/module",
   ],
   tailwindcss: {
     cssPath: ["~/assets/scss/tailwind.scss", { injectPosition: "first" }],

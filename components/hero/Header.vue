@@ -35,7 +35,7 @@ const toggleDrawerOpen = () => {
     <div class="max-md:flex hidden items-center justify-center gap-4">
       <button @click="toggleDrawerOpen">
         <span class="sr-only">Menu</span>
-        <icon name="tabler:menu-2" size="28" />
+        <Icon name="tabler:menu-2" size="28" />
       </button>
     </div>
 
@@ -56,7 +56,7 @@ const toggleDrawerOpen = () => {
           class="bg-base-300 p-4 h-[60px] w-[60px] rounded-full"
         >
           <span class="sr-only">Fechar</span>
-          <icon name="tabler:x" size="28" />
+          <Icon name="tabler:x" size="28" />
         </button>
       </li>
       <li>

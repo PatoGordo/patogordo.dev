@@ -29,7 +29,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <icon name="ri:github-fill" size="24" />
+          <Icon name="ri:github-fill" size="24" />
           <span class="font-semibold underline underline-offset-2">GitHub</span>
         </a>
 
@@ -39,7 +39,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <icon name="skill-icons:linkedin" size="24" />
+          <Icon name="skill-icons:linkedin" size="24" />
           <span class="font-semibold underline underline-offset-2"
             >LinkedIn</span
           >
@@ -49,7 +49,7 @@
           class="flex items-center justify-center gap-2"
           href="/#contact-me"
         >
-          <icon name="uil:envelope-alt" size="24" />
+          <Icon name="uil:envelope-alt" size="24" />
           <span class="font-semibold underline underline-offset-2">{{
             $t("profile.contact-me")
           }}</span>
