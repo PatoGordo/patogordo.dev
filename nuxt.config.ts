@@ -10,6 +10,9 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@vueuse/nuxt",
   ],
+  icon: {
+    provider: "server",
+  },
   tailwindcss: {
     cssPath: ["~/assets/scss/tailwind.scss", { injectPosition: "first" }],
     configPath: "./tailwind.config.js",
