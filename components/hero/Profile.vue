@@ -17,7 +17,7 @@
       >
         {{ $t("profile.hello-i-am.title") }}
         <span class="text-xl text-secondary font-semibold">Ícaro Rocha</span>,
-        {{ $t("profile.datails") }}
+        {{ $t("profile.details") }}
       </h2>
 
       <div
