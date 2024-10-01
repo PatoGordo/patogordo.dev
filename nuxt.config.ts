@@ -12,6 +12,9 @@ export default defineNuxtConfig({
   ],
   icon: {
     provider: "server",
+    clientBundle: {
+      scan: true,
+    },
   },
   tailwindcss: {
     cssPath: ["~/assets/scss/tailwind.scss", { injectPosition: "first" }],
