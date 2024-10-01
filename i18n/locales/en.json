@@ -47,5 +47,9 @@
     "gbreath": {
       "description": "GBreath is an open-source project designed to assist meditation practitioners with breathing techniques. With it, users can enhance their breathing skills and promote well-being. It’s an accessible and user-friendly tool, perfect for those seeking relaxation or emotional control."
     }
+  },
+  "contact-me": {
+    "title": "Contact Me",
+    "description": "Interessed in one of my projects, profile or skills? Let me know"
   }
 }

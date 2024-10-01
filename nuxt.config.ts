@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxtjs/i18n",
     "@nuxt/fonts",
-    "@vueuse/nuxt",
+    "@formkit/auto-animate/nuxt",
   ],
   icon: {
     provider: "server",
