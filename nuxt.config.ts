@@ -12,8 +12,8 @@ export default defineNuxtConfig({
   ],
   icon: {
     provider: "server",
-    clientBundle: {
-      scan: true,
+    serverBundle: {
+      collections: ["tabler", "ri", "uil", "skill-icons", "circle-flags"],
     },
   },
   tailwindcss: {
