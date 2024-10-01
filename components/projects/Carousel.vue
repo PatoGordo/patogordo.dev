@@ -36,9 +36,48 @@ const items = computed(() => [
 </script>
 
 <template>
-  <div class="w-full max-w-5xl mx-auto text-center">
+  <div
+    class="w-full max-w-5xl mx-auto text-center flex flex-row max-sm:flex-col items-start gap-6"
+  >
+    <!-- Items -->
+    <div
+      class="sm:max-w-sm md:max-w-3xl max-sm:w-full flex flex-col max-sm:grid grid-cols-2 justify-center gap-4"
+    >
+      <template :key="index" v-for="(item, index) in items">
+        <button
+          class="relative z-10 focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 group max-sm:w-full"
+          @click="active = index"
+        >
+          <span
+            class="relative z-20 text-center flex flex-col items-center bg-base-300 w-full h-full p-2 border-2 rounded-lg"
+            :class="active === index ? 'border-primary-500' : 'border-gray-500'"
+          >
+            <span
+              class="flex items-center justify-center relative w-9 h-9 rounded-full mb-2"
+            >
+              <img
+                class="rounded-xl"
+                :src="item.iconUrl"
+                width="1024"
+                height="576"
+                :alt="`${$t('projects.icons-alt', {
+                  project_name: item.name,
+                })}`"
+              />
+            </span>
+            <span class="block text-sm font-medium mb-2">{{ item.name }}</span>
+          </span>
+          <span
+            class="z-10 absolute top-1/2 -right-8 w-full h-0.5 bg-primary-500 max-sm:hidden"
+            :class="active === index ? '' : 'hidden'"
+          ></span>
+        </button>
+      </template>
+    </div>
     <!-- Images -->
-    <div class="transition-all duration-150 delay-300 ease-in-out">
+    <div
+      class="transition-all duration-150 delay-300 ease-in-out border-2 border-primary-500 p-6 rounded-lg bg-base-300 z-20 relative"
+    >
       <div class="relative flex flex-col">
         <template :key="index" v-for="(item, index) in items">
           <TransitionRoot
@@ -64,7 +103,7 @@ const items = computed(() => [
               {{ item.description }}
             </p>
 
-            <div class="w-full flex items-center justify-start gap-2 mt-6">
+            <div class="w-full flex items-center justify-start gap-2 mt-6 flex-wrap">
               <p class="text-start">
                 {{ $t("projects.supported-languages") }}:
               </p>
@@ -87,10 +126,12 @@ const items = computed(() => [
               </div>
             </div>
 
-            <div class="w-full flex items-center justify-start mt-6 gap-4">
+            <div
+              class="w-full flex max-sm:flex-col items-center justify-start mt-6 gap-4"
+            >
               <a
                 v-if="item?.sourceCode"
-                class="px-4 py-3 bg-secondary-500 text-black font-bold rounded-lg flex items-center justify-center gap-2"
+                class="px-4 py-3 bg-secondary-500 text-black font-bold rounded-lg flex items-center justify-center gap-2 max-sm:w-full"
                 :href="item?.sourceCode"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -101,7 +142,7 @@ const items = computed(() => [
 
               <a
                 v-if="item?.livePreview"
-                class="px-4 py-3 bg-primary-500 text-black font-bold rounded-lg flex items-center justify-center gap-2"
+                class="px-4 py-3 bg-primary-500 text-black font-bold rounded-lg flex items-center justify-center gap-2 max-sm:w-full"
                 :href="item?.livePreview"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -117,47 +158,6 @@ const items = computed(() => [
           </TransitionRoot>
         </template>
       </div>
-    </div>
-    <!-- Items -->
-    <div
-      class="max-w-xs sm:max-w-sm md:max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mt-8"
-    >
-      <template :key="index" v-for="(item, index) in items">
-        <button
-          class="p-2 rounded focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 group"
-          @click="active = index"
-        >
-          <span class="text-center flex flex-col items-center">
-            <span
-              class="flex items-center justify-center relative w-9 h-9 rounded-full mb-2"
-            >
-              <img
-                class="rounded-xl"
-                :src="item.iconUrl"
-                width="1024"
-                height="576"
-                :alt="`${$t('projects.icons-alt', {
-                  project_name: item.name,
-                })}`"
-              />
-            </span>
-            <span class="block text-sm font-medium mb-2">{{ item.name }}</span>
-            <span
-              class="block relative w-full h-1 rounded-full"
-              :class="active === index ? 'bg-primary-500' : 'bg-gray-500'"
-              role="progressbar"
-              aria-valuenow="0"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              <span
-                class="absolute inset-0 bg-indigo-500 rounded-[inherit]"
-                style="width: 0%"
-              ></span>
-            </span>
-          </span>
-        </button>
-      </template>
     </div>
   </div>
 </template>
