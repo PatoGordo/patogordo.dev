@@ -50,6 +50,27 @@
   },
   "contact-me": {
     "title": "Contact Me",
-    "description": "Interessed in one of my projects, profile or skills? Let me know"
+    "description": "Interessed in one of my projects, profile or skills? Let me know",
+    "form": {
+      "email": {
+        "label": "Email",
+        "placeholder": "Your email"
+      },
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Contact subject"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message"
+      },
+      "submit-text": "Send message"
+    },
+    "prefer-another-contact-method": "Prefer contacting me using another method?",
+    "direct-email": "Direct email"
   }
 }

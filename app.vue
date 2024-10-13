@@ -14,7 +14,9 @@ const head = useLocaleHead({
     </Head>
 
     <Body>
-      <NuxtPage />
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
     </Body>
   </Html>
 </template>

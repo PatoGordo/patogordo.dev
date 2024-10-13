@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 import { vOnClickOutside } from "@vueuse/components";
+import i18next from "i18next";
+import { makeZodI18nMap } from "zod-i18n-map";
+import v from "~/config/validate";
 
 const langDropdownOpen = ref(false);
 
@@ -17,6 +20,12 @@ const handleChangeLang = (newLang: string) => {
   setLocale(newLang);
   handleCloseLangDropdown();
 };
+
+watch(locale, (newLocale) => {
+  i18next.changeLanguage(newLocale);
+  
+  v.setErrorMap(makeZodI18nMap({ t: i18next.t }));
+});
 </script>
 
 <template>

@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section id="projects" class="w-full flex flex-col items-center">
+  <section id="contact-me" class="w-full flex flex-col items-center">
     <h3 class="text-xl text-center mb-2 mt-12">
       {{ $t("contact-me.title") }}
     </h3>
@@ -16,7 +16,7 @@
 
     <div class="w-full h-[1px] bg-gray-700 mt-12"></div>
 
-    <span class="mt-12">Prefere entrar em contato de outra forma?</span>
+    <span class="mt-12">{{ $t("contact-me.prefer-another-contact-method") }}</span>
 
     <span class="mt-6" />
 
@@ -49,7 +49,7 @@
       >
         <Icon name="uil:envelope-alt" size="24" />
         <span class="font-semibold underline underline-offset-2"
-          >Email direto (icaro@patogordo.dev)</span
+          >{{ $t("contact-me.direct-email") }} (icaro@patogordo.dev)</span
         >
       </a>
     </div>

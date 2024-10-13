@@ -1,14 +1,20 @@
 import i18next from "i18next";
 import { z as v } from "zod";
 import { makeZodI18nMap } from "zod-i18n-map";
-import translation from "zod-i18n-map/locales/pt/zod.json";
+import pt from "zod-i18n-map/locales/pt/zod.json";
+import en from "zod-i18n-map/locales/en/zod.json";
 
 i18next.init({
   lng: "pt",
   resources: {
     pt: {
       zod: {
-        ...translation,
+        ...pt,
+      },
+    },
+    en: {
+      zod: {
+        ...en,
       },
     },
   },

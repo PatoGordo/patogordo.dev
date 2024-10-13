@@ -50,6 +50,27 @@
   },
   "contact-me": {
     "title": "Me Contate",
-    "description": "Se interessou em um dos meus projetos, perfil ou habidades? Entre em contato comigo"
+    "description": "Se interessou em um dos meus projetos, perfil ou habidades? Entre em contato comigo",
+    "form": {
+      "email": {
+        "label": "Email",
+        "placeholder": "Seu email"
+      },
+      "name": {
+        "label": "Nome",
+        "placeholder": "Seu nome"
+      },
+      "subject": {
+        "label": "Assunto",
+        "placeholder": "Assunto do contato"
+      },
+      "message": {
+        "label": "Mensagem",
+        "placeholder": "Sua mensagem"
+      },
+      "submit-text": "Enviar mensagem"
+    },
+    "prefer-another-contact-method": "Prefere entrar em contato de outra forma?",
+    "direct-email": "Email direto"
   }
 }
