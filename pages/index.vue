@@ -1,9 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <section
-    class="w-full h-fit"
-  >
+  <section class="w-full h-fit">
     <Hero />
 
     <div class="w-full h-[1px] bg-gray-700 mt-12"></div>

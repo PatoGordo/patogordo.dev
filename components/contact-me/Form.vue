@@ -220,7 +220,7 @@ watch(locale, () => {
   </form>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
 *:disabled {
   filter: grayscale(0.4);
 }
