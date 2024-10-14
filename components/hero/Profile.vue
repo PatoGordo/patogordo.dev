@@ -6,7 +6,7 @@
     class="w-full flex max-sm:flex-col flex-row items-center justify-start gap-8"
   >
     <img
-      src="/images/fuça.jpeg"
+      src="/images/fuça.png"
       :alt="$t('profile.photo-alt')"
       class="!w-32 !h-32 bg-base-100 rounded-full select-none"
     />
