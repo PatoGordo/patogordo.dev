@@ -68,7 +68,17 @@
         "label": "Mensagem",
         "placeholder": "Sua mensagem"
       },
-      "submit-text": "Enviar mensagem"
+      "submit-text": "Enviar mensagem",
+      "submiting-text": "Enviando mensagem...",
+      "error": {
+        "title": "Erro ao enviar seu contato",
+        "error": "Erro",
+        "unknown-error": "Erro desconhecido!"
+      },
+      "success": {
+        "title": "Seu contato foi enviado com sucesso",
+        "description": "Obrigado pelo seu contato! Em breve você receberá uma resposta em seu email"
+      }
     },
     "prefer-another-contact-method": "Prefere entrar em contato de outra forma?",
     "direct-email": "Email direto"

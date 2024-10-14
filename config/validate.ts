@@ -5,7 +5,7 @@ import pt from "zod-i18n-map/locales/pt/zod.json";
 import en from "zod-i18n-map/locales/en/zod.json";
 
 i18next.init({
-  lng: "pt",
+  lng: "en",
   resources: {
     pt: {
       zod: {

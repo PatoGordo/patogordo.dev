@@ -68,7 +68,17 @@
         "label": "Message",
         "placeholder": "Your message"
       },
-      "submit-text": "Send message"
+      "submit-text": "Send message",
+      "submiting-text": "Sending message...",
+      "error": {
+        "title": "Error sending your contact",
+        "error": "Error",
+        "unknown-error": "Unknown error!"
+      },
+      "success": {
+        "title": "Contact has been successfully sent",
+        "description": "Thank you for your contact! Soon you will receive a reply in your email."
+      }
     },
     "prefer-another-contact-method": "Prefer contacting me using another method?",
     "direct-email": "Direct email"

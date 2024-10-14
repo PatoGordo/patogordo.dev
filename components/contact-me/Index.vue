@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { appConfig } from "~/config/app";
+</script>
 
 <template>
   <section id="contact-me" class="w-full flex flex-col items-center">
@@ -16,7 +18,9 @@
 
     <div class="w-full h-[1px] bg-gray-700 mt-12"></div>
 
-    <span class="mt-12">{{ $t("contact-me.prefer-another-contact-method") }}</span>
+    <span class="mt-12">{{
+      $t("contact-me.prefer-another-contact-method")
+    }}</span>
 
     <span class="mt-6" />
 
@@ -43,13 +47,15 @@
 
       <a
         class="flex items-center justify-center gap-2"
-        href="mailto:icaro@patogordo.dev"
+        :href="`mailto:${appConfig.contactMailAddress}`"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Icon name="uil:envelope-alt" size="24" />
         <span class="font-semibold underline underline-offset-2"
-          >{{ $t("contact-me.direct-email") }} (icaro@patogordo.dev)</span
+          >{{ $t("contact-me.direct-email") }} ({{
+            appConfig.contactMailAddress
+          }})</span
         >
       </a>
     </div>
