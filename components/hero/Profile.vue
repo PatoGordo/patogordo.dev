@@ -5,9 +5,11 @@
     id="#about"
     class="w-full flex max-sm:flex-col flex-row items-center justify-start gap-8"
   >
-    <img
+    <LazyNuxtImg
       src="/images/fuça.png"
       :alt="$t('profile.photo-alt')"
+      width="128"
+      height="128"
       class="!w-32 !h-32 bg-base-100 rounded-full select-none"
     />
 

@@ -13,6 +13,7 @@
     "@formkit/auto-animate": "^0.8.2",
     "@headlessui/vue": "^1.7.23",
     "@nuxt/fonts": "^0.9.2",
+    "@nuxt/image": "^1.8.1",
     "@nuxtjs/i18n": "^8.5.5",
     "@vee-validate/zod": "^4.13.2",
     "@vueuse/components": "^11.1.0",
@@ -23,6 +24,7 @@
     "vee-validate": "^4.13.2",
     "vue": "^3.5.10",
     "vue-router": "^4.4.5",
+    "vue3-lottie": "^3.3.1",
     "zod": "^3.23.8",
     "zod-i18n-map": "^2.27.0"
   },

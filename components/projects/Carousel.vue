@@ -55,11 +55,11 @@ const items = computed(() => [
             <span
               class="flex items-center justify-center relative w-9 h-9 rounded-full mb-2"
             >
-              <img
-                class="rounded-xl"
+              <LazyNuxtImg
+                class="rounded-xl bg-base-100"
                 :src="item.iconUrl"
-                width="1024"
-                height="576"
+                width="512"
+                height="512"
                 :alt="`${$t('projects.icons-alt', {
                   project_name: item.name,
                 })}`"
@@ -89,8 +89,8 @@ const items = computed(() => [
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <img
-              class="rounded-xl border border-gray-700"
+            <LazyNuxtImg
+              class="rounded-xl border bg-base-100 border-gray-700"
               :src="item.imgUrl"
               width="1024"
               height="576"
