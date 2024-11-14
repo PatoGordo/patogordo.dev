@@ -82,5 +82,21 @@
     },
     "prefer-another-contact-method": "Prefer contacting me using another method?",
     "direct-email": "Direct email"
+  },
+  "skills": {
+    "title": "My Skills",
+    "description": "Here you'll find some of the technologies I use in my day-to-day work as a developer",
+    "backend": {
+      "title": "Back End"
+    },
+    "frontend": {
+      "title": "Front End"
+    },
+    "mobile": {
+      "title": "Mobile"
+    },
+    "miscellaneous": {
+      "title": "Miscellaneous"
+    }
   }
 }

@@ -10,6 +10,10 @@
 
     <div class="w-full h-[1px] bg-gray-700 mt-12"></div>
 
+    <Skills />
+
+    <div class="w-full h-[1px] bg-gray-700 mt-12"></div>
+
     <ContactMe />
 
     <div class="w-full h-[1px] bg-gray-700 mt-12"></div>

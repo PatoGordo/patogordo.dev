@@ -103,7 +103,9 @@ const items = computed(() => [
               {{ item.description }}
             </p>
 
-            <div class="w-full flex items-center justify-start gap-2 mt-6 flex-wrap">
+            <div
+              class="w-full flex items-center justify-start gap-2 mt-6 flex-wrap"
+            >
               <p class="text-start">
                 {{ $t("projects.supported-languages") }}:
               </p>
