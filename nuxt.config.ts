@@ -11,6 +11,12 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@formkit/auto-animate/nuxt",
   ],
+  icon: {
+    clientBundle: {
+      scan: true,
+      sizeLimitKb: 256,
+    },
+  },
   tailwindcss: {
     cssPath: ["~/assets/scss/tailwind.scss", { injectPosition: "first" }],
     configPath: "./tailwind.config.js",
